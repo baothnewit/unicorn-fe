@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Questrial } from 'next/font/google'
+import AppHeader from '@/components/app.header'
 
 const questrial = Questrial({ weight: '400', subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={questrial.className}>
+        <AppHeader />
         {children}
       </body>
     </html>
