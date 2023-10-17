@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function AppHeader() {
 
@@ -12,7 +13,12 @@ export default function AppHeader() {
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-3" aria-label="Global">
                 <div className="hidden min-[420px]:flex min-[420px]:flex-1">
                     <Link href="#" className="-m-1.5 p-1.5">
-                        <span className='text-base font-bold leading-loose lg:px-10'>Unicord</span>
+                        <Image
+                            src="/unicorn-logo.png"
+                            width={40}
+                            height={40}
+                            alt="Unicorn"
+                        />
                     </Link>
                 </div>
 
