@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="bg-slate-50 h-full">
-      <body className={questrial.className}>
+    <html lang="en">
+      <body className={questrial.className + " bg-slate-50 h-screen flex flex-col"}>
         <AppHeader />
         {children}
       </body>
